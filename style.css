@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* ? nexa font */
+@font-face {
+  font-family: "NexaHeavy";
+  src: url(assets/fonts/NexaHeavy.ttf) format("truetype"),
+    url(assets/fonts/NexaHeavy.woff) format("woff");
+}
+@font-face {
+  font-family: "NexaExtraLight";
+  src: url(assets/fonts/NexaExtraLight.ttf) format("truetype"),
+    url(assets/fonts/NexaExtraLight.woff) format("woff");
+}
+
+/* ! Default styles */
+.btn {
+  background-color: #fe8c45 !important;
+  color: #fff !important;
+  font-size: 1.125rem !important;
+  padding: 0.625rem 2.8125rem !important;
+  border-radius: 5.625rem !important;
+  text-wrap: nowrap;
+}
+.nav-link {
+  font-size: 1.125rem !important;
+}
+.color-violate {
+  color: #8a47f6 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+}
+
+/* ! Hero section */
+
+.heroSeciton {
+  .heading {
+    font-family: "NexaHeavy";
+    font-size: 4.625rem;
+    line-height: 5.625rem;
+    color: #111111;
+  }
+  .heading {
+    position: relative;
+  }
+  .heading::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 1.5625rem;
+    background-color: #8a47f6;
+    border-radius: 2.1875rem;
+    position: absolute;
+    bottom: 1.875rem;
+    left: 13.75rem;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+  .golden_vow {
+    position: absolute;
+    top: -2.3125rem;
+    left: 0;
+    z-index: 999;
+  }
+  .violate_vow {
+    position: absolute;
+    top: 21.25rem;
+    left: 0;
+  }
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -5rem !important;
+}
+#carouselExampleIndicatorBtn {
+  background-color: #e1e1e1;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+}
+#carouselExampleIndicatorBtn.active {
+  background-color: #8a47f6;
+  scale: 1.125;
+}
+/* about us section  */
+.aboutUs {
+  background-color: rgba(138, 71, 246, 0.1);
+}
+.aboutTextContentSection {
+  & p:first-child {
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111111;
+    margin-left: 1.5625rem;
+  }
+  & p::after {
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 0.0625rem;
+    background-color: #8a47f6;
+    position: absolute;
+    top: 0.9375rem;
+    left: -1.5625rem;
+  }
+  & h2 {
+    font-family: "NexaHeavy";
+    font-size: 3rem;
+    line-height: 3.625rem;
+    font-weight: 900;
+    color: #111111;
+  }
+  .aboutTextContentSection_p2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #333;
+  }
+  .btn {
+    display: block;
+    margin-top: 1.875rem;
+  }
+}
+
+/* portfolio section  */
+
+.portfolio_header_navBar {
+  & ul {
+    margin: 0;
+    & li:nth-child(2) a {
+      color: #8a47f6 !important;
+      font-weight: 500 !important;
+      text-decoration: underline !important;
+    }
+  }
+  height: 4.1875rem;
+  box-shadow: 0rem 0rem 0.9375rem 0rem #0000001f;
+  border-radius: 0.5rem;
+}
+.portfolio_header .header {
+  font-family: "NexaHeavy";
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #111111;
+}
+.portfolio_golden_vow {
+  position: absolute;
+  top: 93.75rem;
+  right: 0;
+  z-index: -99;
+}
+.rect_18th_image {
+  margin-right: 2.8125rem;
+}
+.portfolio_violate_vow {
+  position: absolute;
+  left: 0;
+  top: 156.25rem;
+}
+/* prices section */
+.prices_header {
+  font-family: "NexaHeavy";
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #111111;
+}
+.price_card {
+  width: 100%;
+  height: 26.25rem;
+  border-radius: 0.9375rem;
+  box-shadow: 0rem 0rem 0.9375rem 0rem #0000001f;
+  transition: all 200ms ease-in-out;
+  z-index: 999;
+}
+.price_card:hover {
+  background-color: #222;
+  .price_title,
+  .price_text,
+  .price {
+    color: white !important;
+  }
+  .btn {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
+.prices_golden_vow {
+  position: absolute;
+  top: 200rem;
+  right: 0;
+  z-index: -99;
+}
+.price_title {
+  font-size: 1.5rem;
+  font-family: "NexaHeavy";
+}
+.price_text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #333;
+  font-weight: 400;
+}
+.price {
+  font-family: "NexaHeavy";
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #111111;
+}
+/* testimonials seciton  */
+.testimonials {
+  background-color: rgba(138, 71, 246, 0.1);
+}
+.testimonials_p1 {
+  position: relative;
+  margin-left: 1.5625rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111;
+}
+.testimonials_p1::after {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 0.0625rem;
+  background-color: #8a47f6;
+  position: absolute;
+  top: 0.9375rem;
+  left: -1.5625rem;
+}
+.testimonials_h2 {
+  font-family: "NexaHeavy";
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #111111;
+}
+.testimonials_p2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: #333;
+}
+.customerSection {
+  width: 21.125rem;
+}
+.customerProfile {
+  background-color: rgba(138, 71, 246, 0.15);
+  border-radius: 4.375rem;
+  & p {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #333;
+  }
+}
+.customerSlider img {
+  border: 0.0625rem solid #333;
+  padding: 0.9688rem 0.75rem;
+  border-radius: 50%;
+}
+.slider_next {
+  transform: rotate(180deg);
+}
+/* instagram feeds section  */
+.IG_feed_golden_vow {
+  position: absolute;
+  left: 0;
+  top: 5100px;
+}
+/* contact us seciton  */
+.contactUs {
+  position: relative;
+}
+.contactUs_left {
+  & h1 {
+    font-family: "NexaHeavy";
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+    color: #111111;
+  }
+  & p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #333;
+  }
+  & label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+  }
+}
+.address_body {
+  background-color: rgba(138, 71, 246, 0.15);
+  border-radius: 15px;
+}
+.address_label {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  color: #333;
+}
+.address_content {
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  line-height: 28px;
+}
+.about_golden_vow {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+.about_violate_vow {
+  position: absolute;
+  right: 120px;
+  bottom: -60px;
+}
+/* footer section */
+.footer {
+  background-color: #222;
+}
+.footer_links-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* ! media Queries */
+
+@media all and (max-width: 768px) {
+  .heroSeciton {
+    .heading {
+      font-size: 3.625rem;
+      line-height: 4rem;
+    }
+    .heading::after {
+      width: 7rem;
+      height: 1rem;
+      bottom: 1.75rem;
+      left: 9.75rem;
+    }
+  }
+  .carousel-indicators {
+    bottom: -4rem !important;
+  }
+}
+.social_img {
+  width: auto;
+  height: auto;
+}
+@media all and (max-width: 600px) {
+  .customerSection {
+    width: 16.125rem;
+  }
+  .heroSeciton {
+    .heading {
+      font-size: 2rem;
+      line-height: 1.9rem;
+    }
+    .heading::after {
+      width: 4rem;
+      height: 0.55rem;
+      bottom: 0.75rem;
+      left: 5.75rem;
+    }
+  }
+  .aboutTextContentSection {
+    & h2 {
+      font-size: 2rem;
+      line-height: 1.825rem;
+    }
+  }
+  .heroSeciton {
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+  .aboutTextContentSection_p2,
+  .price_text,
+  .testimonials_p2 {
+    font-size: 0.9rem !important;
+  }
+  .portfolio_header .header,
+  .prices_header,
+  .price,
+  .testimonials_h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .price_title {
+    font-size: 1rem;
+  }
+  .customerProfile {
+    & p {
+      font-size: 1rem;
+    }
+  }
+  .customerSlider img {
+    padding: 0.54rem 0.35rem;
+  }
+  .social_img {
+    width: 30px !important;
+  }
+  .btn {
+    font-size: 0.85rem !important;
+    padding: 0.375rem 0.625rem !important;
+    border-radius: 5.625rem !important;
+  }
+}
+
